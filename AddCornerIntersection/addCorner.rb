@@ -33,7 +33,7 @@ toolbar = UI::Toolbar.new("Wall")
 cmd = UI::Command.new("Corner") {
     AddCornerIntersect::addCornerIntersectFromSelection
 }
-cmd.small_icon = cmd.large_icon = "/Users/rafaelteresachinchilla/Library/Application\ Support/SketchUp\ 2021/SketchUp/Plugins/AddCornerIntersection/CornerSmall.png"
+cmd.small_icon = cmd.large_icon = "AddCornerIntersection/CornerSmall.png"
 toolbar = toolbar.add_item(cmd)
 toolbar.show
 
