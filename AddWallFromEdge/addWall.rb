@@ -60,7 +60,7 @@ toolbar = UI::Toolbar.new("Wall")
 cmd = UI::Command.new("Wall") {
     AddWallFromEdge::addWallFromSelection
 }
-cmd.small_icon = cmd.large_icon = "/Users/rafaelteresachinchilla/Library/Application\ Support/SketchUp\ 2021/SketchUp/Plugins/AddWallFromEdge/addWallLarge.png"
+cmd.small_icon = cmd.large_icon = "AddWallFromEdge/addWallLarge.png"
 toolbar = toolbar.add_item(cmd)
 toolbar.show
 
