@@ -35,7 +35,7 @@ module AddWallFromEdge
 
         new_comp_def = Sketchup.active_model.definitions.add(input[2])
         newface = new_comp_def.entities.add_face(pts)
-        newface.pushpull(@thickness, true)
+        newface.pushpull(@thickness, false)
         trans = Geom::Transformation.new
         Sketchup.active_model.active_entities.add_instance(new_comp_def, trans)
 
@@ -46,7 +46,7 @@ module AddWallFromEdge
         Sketchup.undo
         Sketchup.undo
         newface.reverse!
-        newface.pushpull(@thickness, true)
+        newface.pushpull(@thickness, false)
         #trans = Geom::Transformation.new
         Sketchup.active_model.active_entities.add_instance(new_comp_def, trans)
         end
